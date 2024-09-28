@@ -6,7 +6,7 @@ plt.rcParams['xtick.direction'] = 'out'
 plt.rcParams['ytick.direction'] = 'out'
 plt.rcParams["xtick.minor.size"] = 3
 plt.rcParams["xtick.minor.width"] = 1
-plt.rcParams['font.family'] = 'Times New Roman' #全体のフォントを設定
+#plt.rcParams['font.family'] = 'Times New Roman' #全体のフォントを設定
 
     
 def counter(fig_size_h,fig_size_w,min_em,max_em,min_ex,max_ex,min_inte,max_inte,bins,fs,fig_color,xaxis,yaxis,X,Y,p2):        
