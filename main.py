@@ -5,13 +5,6 @@ import numpy as np
 import matplotlib.cm as cmArial
 import streamlit as st
 
-
-st.set_page_config(
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
-
 from urllib3 import encode_multipart_formdata
 from PIL import Image
 import page1
