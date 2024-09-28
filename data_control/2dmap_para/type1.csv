@@ -1,0 +1,12 @@
+0,1,2
+fontsize,16,
+figure h,9,
+figure w,4,
+em_min,380,nm
+em_max,930,nm
+ex_min,200,nm
+ex_max,500,nm
+bin,10,
+fig_color,viridis,
+xaxis,Emission wavelength [nm],
+yaxis,Excitaion wavelength [nm],
