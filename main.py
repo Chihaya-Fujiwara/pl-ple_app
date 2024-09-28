@@ -25,6 +25,12 @@ import atl
 from ple import uvsor1
 from ple import uvsor2
 
+st.set_page_config(
+    page_title="PL-PLE",
+    page_icon="atom_symbol", 
+    layout="wide",
+    #initial_sidebar_state="expanded",
+)
 
 def main():
 
@@ -43,13 +49,5 @@ def main():
     
 
 if __name__ == '__main__':
-    
-    st.set_page_config(
-        page_title="PL-PLE",
-        page_icon="atom_symbol", 
-        layout="wide",
-        #initial_sidebar_state="expanded",
-    )
-
     main()
     
