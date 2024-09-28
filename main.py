@@ -28,14 +28,6 @@ from ple import uvsor2
 
 def main():
 
-    st.set_page_config(
-        page_title="PL-PLE",
-        page_icon="atom_symbol", 
-        layout="wide",
-        #initial_sidebar_state="expanded",
-    )
-
-
     st.write('2024/8/26  Ver.002 coded by Chihaya Fujiwara')
 
     image1 = Image.open('data_control/image1.png')
@@ -51,5 +43,13 @@ def main():
     
 
 if __name__ == '__main__':
+    
+    st.set_page_config(
+        page_title="PL-PLE",
+        page_icon="atom_symbol", 
+        layout="wide",
+        #initial_sidebar_state="expanded",
+    )
+
     main()
     
