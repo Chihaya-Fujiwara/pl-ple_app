@@ -1,6 +1,5 @@
 from binascii import crc32
 from cProfile import label
-from distutils.command.build_scripts import first_line_re
 import pandas as pd
 import numpy as np
 import matplotlib.cm as cmArial
