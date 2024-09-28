@@ -27,11 +27,6 @@ st.set_page_config(
 
 def main():
 
-    st.write('2024/8/26  Ver.002 coded by Chihaya Fujiwara')
-
-    image1 = Image.open('data_control/image1.png')
-    st.sidebar.image(image1)
-
     with st.sidebar.expander("Select"):
         g = st.selectbox("Tool type", ('PLE'))
 
@@ -42,5 +37,15 @@ def main():
     
 
 if __name__ == '__main__':
-    main()
-    
+    st.write('2024/8/26  Ver.002 coded by Chihaya Fujiwara')
+    image1 = Image.open('data_control/image1.png')
+    st.sidebar.image(image1)
+
+    with st.sidebar.expander('Input activation Key'):    
+        usname = st.text_input('User name')
+        password = st.text_input('Password')
+
+    if usname == 'Fujisor' and password == 'teamx-v12':
+        main()
+    else:
+        st.stop()

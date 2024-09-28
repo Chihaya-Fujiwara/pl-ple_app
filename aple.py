@@ -21,6 +21,11 @@ def aple(save_dir):
     img_resized = image.resize((width, height))
     col2.image(image)
     
+    with st.sidebar.expander("Page"):
+        genre = st.selectbox("Select",('Main page','2DMAP', 'Spectrum','Multi gaussian fit'))
+
+    if genre == 'Main page':
+        page1.page1(genre)
 
     step = 0
     fir = 0
@@ -44,11 +49,6 @@ def aple(save_dir):
         # 条件を満たないときは処理を停止する
         st.stop()
     
-    genre = st.sidebar.selectbox(
-        "Analysis type",
-        ('Main page','2DMAP', 'Spectrum','Multi gaussian fit',))
-
-    st.sidebar.write('------------------------------------------------')
 
     left_column,right_column = st.columns(2)
 
@@ -64,9 +64,6 @@ def aple(save_dir):
     #dff = counter_para()
     wb = pd.read_table('data_control/Hample.csv',sep=',')   
     #-------------------------- 
-
-    if genre == 'Main page':
-        page1.page1(genre)
         
     if genre == '2DMAP':
         page2.page2(genre,X,Y,p2,save_dir)
