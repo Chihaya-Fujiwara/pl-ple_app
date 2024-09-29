@@ -52,7 +52,7 @@ def run():
         name, authentication_status, user_name = authenticator.login("Login", "main")
         if authentication_status:
             authenticator.logout("Logout")
-            st.write(f'Welcome *{st.session_state["name"]}*')
+            st.write('Activated !!')
 
         elif authentication_status is False:
             st.error("Username/password is incorrect")
